@@ -1,0 +1,111 @@
+:root {
+    --title-color: #ffffff;
+    --primary-color: #eef1bf;
+    --secondary-color: #b2f3ba;
+    --accent-color: #E96D57;
+    --text-color: #000000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Disable scrolling */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.full-screen-wrapper {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.jumbotron {
+    background-color: transparent !important;
+    padding: 0; 
+    margin: 0; 
+}
+
+.jumbotron h2 {
+    font-size: 40px;
+    font-weight: 450;
+    margin: 10% auto;
+}
+
+.jumbotron h1 {
+    color: var(--accent-color);
+    font-size: 70px;
+    font-weight: 650;
+    margin: -9% auto 3% auto; /* top, right, bottom, left */
+}
+
+/* Navbar start */
+.topnav {
+    background-color: #8cded4;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: #404040; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none !important;
+    font-size: 18px;
+    background-color: transparent !important;
+}
+
+.topnav a:hover {
+    background-color: #f5f4a1; 
+    color: #404040; 
+}
+
+.topnav a.active {
+    background-color: #f28c8c !important; 
+    color: #ffffff; 
+}
+/* Navbar end */
+
+/* Background start */
+.color-changing-background {
+    height: 100vh;
+    width: 100vw; 
+    background-color: var(--primary-color); 
+    animation: changeColor 10s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: var(--primary-color);
+    }
+    50% {
+        background-color: var(--secondary-color);
+    }
+    100% {
+        background-color: var(--primary-color);
+    }
+}
+/* Background end */
