@@ -2,7 +2,7 @@
     --title-color: #ffffff;
     --primary-color: #eef1bf;
     --secondary-color: #b2f3ba;
-    --accent-color: #E96D57;
+    --accent-color: #cf8484;
     --text-color: #000000;
 }
 
@@ -12,6 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Disable scrolling */
+    background-color: #a6e0cf !important;
 }
 
 * {
@@ -64,13 +65,13 @@ h1, h2 {
 
 /* Navbar start */
 .topnav {
-    background-color: #8cded4;
+    background-color: #3e5d5a;
     overflow: hidden;
 }
 
 .topnav a {
     float: right;
-    color: #404040; 
+    color: #eeeded; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none !important;
@@ -80,17 +81,17 @@ h1, h2 {
 
 .topnav a:hover {
     background-color: #f5f4a1; 
-    color: #404040; 
+    color: var(--accent-color); 
 }
 
 .topnav a.active {
-    background-color: #f28c8c !important; 
+    background-color: var(--accent-color) !important; 
     color: #ffffff; 
 }
 /* Navbar end */
 
 /* Background start */
-.color-changing-background {
+/* .color-changing-background {
     height: 100vh;
     width: 100vw; 
     background-color: var(--primary-color); 
@@ -107,5 +108,5 @@ h1, h2 {
     100% {
         background-color: var(--primary-color);
     }
-}
+} */
 /* Background end */
